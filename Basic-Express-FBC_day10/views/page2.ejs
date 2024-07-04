@@ -4,52 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
 </head>
 <body>
-    <h2><%=q%></h2>
+    <!-- <h2><%=q%></h2> -->
     <!-- ประกาศ q ไว้รอรับค่า query จากหลังบ้าน -->
-    <nav>
-        <div class="container">
-            <div class="nav-con">
-            <div class="logo">
-                <a href="#">Beer People</a>
-            </div>
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/page2?search_query=Beer People">continue to page2</a></li>
-                <li><a href="/aboutbeer">About Beer</a></li>
-                <li><a href="/product?limit=10&page=1">Product</a></li>
-                <li><a href="/purchase">Purchase</a></li>
-                <li><a href="#">Contact Us</a></li>
-                
-            </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section class="cart">
-        <div class="container">
-            <div class="cart-con">
-            <header>
-                <h2>Your Shopping Cart</h2>
+   
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
                 <img src="/media/shopping-bag.png">
-                <span class="quantity">0</span> 
+                <span class="quantity">0</span>
             </div>
-            </header>
-            
-            <div class="cart-list"></div>
-        
-            <div class="card">
-                <h2>Card</h2>
-                <ul class="listCard"></ul>
-                <div class="checkOut">
-                    <div class="total">0</div>
-                    <div class="closeShopping">Close</div>
-                </div>
-            </div>
+        </header>
+        <div class="list"></div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
         </div>
-    </section>
+    </div>
+    <script src="/views/app.js"></script>
 
 </body>
 </html>

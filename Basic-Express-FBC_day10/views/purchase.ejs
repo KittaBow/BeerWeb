@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beer People</title>
+    <link rel="stylesheet" href="/css/style.css">
 
-    <link rel="stylesheet" href="/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
@@ -17,64 +15,81 @@
                 <a href="#">Beer People</a>
             </div>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutbeer.html">About Beer</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="purchase.html">Purchase</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/page2?search_query=Beer People">continue to page2</a></li>
+                <li><a href="/aboutbeer">About Beer</a></li>
+                <li><a href="/product?limit=10&page=1">Product</a></li>
+                <li><a href="/purchase">Purchase</a></li>
                 <li><a href="#">Contact Us</a></li>
+                
             </ul>
             </div>
         </div>
     </nav>
-        
-    <section class="hero">
+    
+    <section class="purchase">
         <div class="container">
-            <div class="hero-con">
-                <div class="hero-info">
-                    <h3>Pls drink harder than work !!</h3>
+            <div class="purchase-con">
+                <div class="purchase-info">
+                    <h3>Don't demand true love, demand true beer.</h3>
                     <p>Fellow drinkers want to buy craft beer nearby or order beer online for delivery all over Thailand, but still don't know where to buy it, which brand of craft beer is good, and we are ready to help recommend beer that will be popular in 2024 at our shop. It is a source of craft beer at wholesale prices. There are more than 200 types of products and for anyone who wants to study information and methods for brewing craft beer that you must not miss.</p>
-                    <a href="#" class="hero-btn">Learn more</a>
+                    <a href="#" class="purchase-btn">Delivery</a>
                 </div>
 
-                <!-- <div class="hero-img">
-                    <img src="/media/beer people.jpeg" alt="">
-                </div> -->
+                <div class="purchase-img">
+                    <img src="/media/beermarket.jpeg" alt="">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="blog">
-        <div class="container">
-            <div class="blog-title">
-                <h3>Our Events</h3>
+    <hr>
+    <br>
+    <p>
+                <div class="purchase-form">
+                    <h3>Log In</h3><br>
+                    <form> 
+                        <label for="form-id">Username:</label>
+                        <input id="form-id" placeholder="Username" name="username" type="text">
+                        <label for="form-password">Password:</label>
+                        <input id="form-password" placeholder="Password" name="password" type="password">
+            <br><br>
+                        <label for="form-email">Email:</label>
+                        <input id="form-email" placeholder="example@gmail.com" name="email" type="email"> 
+
+            <!-- radio คือให้ติ้กเลือก ต้องกำหนด name ว่าเป็นก้อนเดียวกัน เลือกได้แค่ 1 -->
+            <!-- value คือกำหนดข้อมูลที่จะถูกส่งไป url/หลังบ้าน -->
+            <br><br>
+                        <p>Choose Delivery Company</p><br>
+                        <input type="radio" value="IT" name="type" id="">
+                        <label for="">IT</label>
+                        <input type="radio" value="NonIT" name="type" id="">
+                        <label for="">NonIT</label>
+                        <input type="radio" value="o" name="type" id="">
+                        <label for="">Other</label>   
+
+            <!-- multiple choices  -->
+            <br><br>
+                        <p>Where did you see the job announcement?</p><br>
+                        <input type="checkbox" value="" name="source" id="">
+                        <label for="">Facebook</label>
+                        <input type="checkbox" value="" name="source" id="">
+                        <label for="">TikTok</label>
+                        <input type="checkbox" value="" name="source" id="">
+                        <label for="">Other</label>
+
+            <br><br>
+                        <p>Choose Area</p><br>
+                        <select name="province" id="">
+                        <option value="bkk">Bangkok</option>
+                        <option value="cnx">Chaingmai</option>
+                        <option value="kkn">Khonkaen</option>
+                        </select>
+
+                    <button style="height: 20px;": submit>sent form</button> 
+                    </form>
             </div>
-
-            <div class="blog-con">
-
-                <div class="blog-item">
-                    <img src="/media/event1.jpeg" alt="">
-                    <h4>KP Beer Market#12</h4>
-                    <p>Come to see me to beat the heat #12 lots of refreshing drinks With a menu of delicious snacks. We're waiting for everyone to come have fun.</p>
-                    <a href="#" class="blog-btn">Learn More</a>
-                </div>
-
-                <div class="blog-item">
-                    <img src="/media/event5.jpeg" alt="">
-                    <h4>Craft Vibe Arts</h4>
-                    <p>“Craft Vibe Arts in Udonthani 2024” A craft event that brings together the charm of craft beer and handicrafts. Let's create an atmosphere of craft and chill (vibe). Ready to enjoy music and art (Art)</p>
-                    <a href="#" class="blog-btn">Learn More</a>
-                </div>
-
-                <div class="blog-item">
-                    <img src="media/event2.jpeg" alt="">
-                    <h4>Sip & Snacks Fest</h4>
-                    <p>How can we be without delicious snacks? And even though the home beer laws are not civilized at all But with snacks in our country, they must be delicious to the heart. Therefore, we created this event to let the world know that Thailand will be number one when it comes to eating and drinking.</p>
-                    <a href="#" class="blog-btn">Learn More</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </p>
 
     <div class="footer-top">
         <div class="container">
